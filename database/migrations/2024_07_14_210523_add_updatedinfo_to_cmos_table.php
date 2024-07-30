@@ -18,6 +18,7 @@ return new class extends Migration
             $table->timestamp('deliveryupdated_at')->nullable();
             $table->unsignedBigInteger('received_by')->nullable();
             $table->timestamp('received_at')->nullable();
+            $table->timestamp('last_calculated_at')->nullable();
         });
     }
 
